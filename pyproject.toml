@@ -7,7 +7,13 @@ authors = [
     { name = "Azeez Adebayo", email = "azeez.adedayo@yahoo.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "ipykernel>=7.4.0",
+    "joblib>=1.6.0",
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+]
 
 [project.scripts]
 bank-marketing-term-deposit-subscription-model = "bank_marketing_term_deposit_subscription_model:main"
