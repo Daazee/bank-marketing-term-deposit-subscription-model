@@ -29,3 +29,4 @@ build-backend = "uv_build"
 [model.settings]
 model-path = "artifacts"
 model-name = "logistic_model_pipeline_with_standardscaler"
+threshold = "0.3"
