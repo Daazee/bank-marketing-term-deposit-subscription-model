@@ -94,3 +94,51 @@ def predict(bankMarketingInput: BankMarketingInput) -> dict[str, Any]:
         "conversion_probability": round(probability, 6),
         "conversion": probability >= 0.5,
     }
+
+
+#sample request returning true
+# {
+#   "age": 58,
+#   "job": "admin.",
+#   "marital": "divorced",
+#   "education": "basic.4y",
+#   "default": "no",
+#   "housing": "yes",
+#   "loan": "no",
+#   "contact": "cellular",
+#   "month": "jan",
+#   "day_of_week": "mon",
+#   "campaign": 1,
+#   "pdays": 0,
+#   "previous": 0,
+#   "poutcome": "nonexistent",
+#   "emp_var_rate": 0,
+#   "cons_price_idx": 92.893,
+#   "cons_conf_idx": -46.2,
+#   "euribor3m": 1.344,
+#   "nr_employed": 0
+# }
+
+
+#sample request returning false
+{
+  "age": 18,
+  "job": "admin.",
+  "marital": "divorced",
+  "education": "basic.4y",
+  "default": "no",
+  "housing": "no",
+  "loan": "no",
+  "contact": "cellular",
+  "month": "jan",
+  "day_of_week": "mon",
+  "campaign": 1,
+  "pdays": 0,
+  "previous": 0,
+  "poutcome": "failure",
+  "emp_var_rate": 0,
+  "cons_price_idx": 0,
+  "cons_conf_idx": 0,
+  "euribor3m": 0,
+  "nr_employed": 0
+}
